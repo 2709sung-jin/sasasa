@@ -119,7 +119,7 @@ a:hover {text-decoration:none}
 /* 전등 */
 .picture_wrap .light {
     position: absolute;
-    left:580px;
+    left:600px;
     top:470px;
     background-color:rgb(97, 36, 97);
     transform: rotate(-180deg); 
@@ -164,6 +164,7 @@ a:hover {text-decoration:none}
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    transition-delay: .6s;
     transition: 5s;
 }
 
@@ -212,7 +213,7 @@ a:hover {text-decoration:none}
 
 .picture_wrap .picture1 {
     position: absolute;
-    left:510px;
+    left:520px;
     top:10px;
     background-image: url("../images/mona.jpeg");
     
@@ -235,7 +236,7 @@ a:hover {text-decoration:none}
 }
 .picture_wrap .picture4 {
     position: absolute;
-    left:510px;
+    left:520px;
     top:750px;
     background-image: url("../images/ITC.png");
 }
