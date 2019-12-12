@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ITC통역스쿨</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="format-detection">
+<meta name="Keywords" content="사이트키워드" />
+<meta name="description" content="사이트설명" />
+<meta name="Author" content="제작자정보" />
+<meta name="Copyright" content="카피라이트" />
+<meta name="reply-to" content="연락처(이메일)" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+
+<style>
+
+#wrap > h1 { 
+    font-size:0;
+}
+
+header { 
+    background-color: #2b2e35;
+}   
+.header_top { 
+    width:1180px;
+    margin:0 auto;
+    position: relative;
+    padding: 20px 0;
+   
+}
+.header_top > strong  { 
+    left:0;
+    position:absolute;
+}
+
+.top_info { 
+    text-align: right;
+
+}
+.top_info > span {
+    color:white;
+    font-size:15px;
+   
+}
+.top_info > span::after {
+    content: "S"; 
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color:orange;
+    text-align:center;
+    line-height: 26px;
+}
+.top_info > .s:after { 
+    content: "S"; 
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color:orange;
+    text-align:center;
+    line-height: 26px;
+}
+
+.top_info > button {
+    border:solid 1px #eee;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 3px;
+    margin-left:3px;
+}
+
+.top_info > .a:after{ 
+     content:"a";
+     background-color: blue;
+
+}
+.header_navi { 
+    margin: 0 auto;
+    width:1180px;
+}
+.header_navi > ul::after { 
+    content: '';
+    display: block;
+    clear:both;
+}
+.header_navi > ul > li { 
+    float: left;
+    width: 12.5%;
+    background-image: url("../../images/menu1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding:70px 0 10px;
+}
+.header_navi > ul > li:nth-of-type(1) { 
+    background-image:url("../../images/menu1.png")
+}
+.header_navi > ul > li:nth-of-type(2) { 
+    background-image:url("../../images/menu2.png")
+}
+
+@media screen and (max-width: 1199px) {
+    .header_navi{width:100%}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section id="wrap">
+    <h1>ITC통역스쿨</h1>
+    
+    <header>
+        <div class="header_top">
+            <strong><img src="../../images/top_logo.png"></strong>
+            
+            <div class="top_info">
+                <span class="a">장성진</span>
+                <button>로그아웃</button>
+                           
+            </div>
+        </div>
+
+        <div class="header_navi">
+            <ul> 
+                <li>
+                  
+                <a href="">관리자</a>
+                </li>
+                <li><a href="">강사</a></li>
+                <li><a href="">회원</a></li>
+                <li><a href="">수강</a></li>
+                <li><a href="">정산</a></li>
+                <li><a href="">강좌</a></li>
+                <li><a href="">게시물</a></li>
+                <li><a href="">기타</a></li>
+            </ul>
+        </div>
+    
+    </header>
+
+    <main >
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</section>
+
+
+</body>
+</html>

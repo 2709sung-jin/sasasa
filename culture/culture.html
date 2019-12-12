@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>culture</title>
+    
+    <link rel="stylesheet" href="css/culture_header.css">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+      
+    <!-- Link JQUERY CDN JS -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Link Swiper's CDN JS -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	
+</head>
+
+  
+<body>
+  
+    <header id="hd_wrap">
+        
+        <div id="header">
+            <ul class="link_nav">
+                <a href="" class="logo">로고</a>
+                <li><a href="">이달의 문화</a></li>
+                <li><a href="">뉴스레터</a></li>
+            </ul>
+            
+           
+                
+            <ul class="util_nav">    
+                <li class="zoomer">
+                    <ul>
+                        <li><a href="" class="in"></a></li>
+                        <li><a href="" class="def"></a></li>
+                        <li><a href="" class="out"></a></li>
+                    </ul>
+                </li>
+                <li class="user">
+                    <ul>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </li>
+                <li class="search">
+                    <a href="">검색창</a>
+                    <form id="hd_search_form" action="" method="post">
+                        <input type="hidden" name="st" id="hd_search_st">
+                        <label for="keyword1"><input type="text" id="keyword1" name="sk" title="검색어"></label>
+                        <button type="button" id="hd_search_btn">검색</button>
+                        <a href="#" class="close">검색창 닫기</a>
+                    </form>
+                </li>
+
+            </ul>
+        </div>
+        
+        <div id="main_nav">
+            <ul class="depth1">
+                <li><a href="">문화예술공간</a></li>
+                <li><a href="">사업안내</a></li>
+                <li><a href="">자료실</a></li>
+                <li><a href="">알림</a></li>
+                <li><a href="">정보공개</a></li>
+                <li><a href="">재단소개</a></li>
+            </ul>
+           
+            <a href="" class="view">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </div>
+    </header>
+      
+
+    
+    <div id="cont_wrap" class="main">
+
+        <div class="section board">
+            <div class="inner">
+           
+           
+                
+            <ul class="tab_select">
+                <li><a href="#">주요소식</a></li>
+                <li><a href="#">사업공모/결과</a></li>
+                <li><a href="#">공지사항/입찰/채용</a></li>
+            </ul>
+            
+                <div class="view_box">
+                    <div class="view view1">
+                        
+                        <div class="swiper-container">
+                            
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/aa1.jpg"></div>
+                                <div class="swiper-slide"><img src="images/aa2.jpg"></div>
+                                <div class="swiper-slide"><img src="images/aa3.jpg"></div>
+                                <div class="swiper-slide"><img src="images/aa6.jpg"></div>
+                                <div class="swiper-slide"><img src="images/aa7.jpg"></div>
+                                <div class="swiper-slide"><img src="images/aa8.jpg"></div>
+                                
+                            </div>
+                            
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <div class="view view2">
+                       사업공모/결과
+                    </div>
+                    
+                    <div class="view view3">
+                        공지사항/입찰/채용
+                    </div>
+                
+                </div>
+        </div>
+    </div>
+        
+    <script>
+                   
+        $(function(){
+
+        $('.tab_select li a').click(function(e) {
+            
+            $(this).parent('li').addClass('on').siblings().removeClass('on');
+            $('.section.board .view_box .view').eq($(this).parent().index()).addClass('on').siblings().removeClass('on');
+            e.preventDefault();
+                
+        });				
+
+        $('.tab_select li a').eq(0).click();
+            
+        });
+            
+    </script>
+
+
+    
+    <div class="section culture">
+            
+            <div class="inner">
+                <h3>
+                    <span>
+
+                    </span>
+                </h3>
+
+                <ul class="culture_list">
+                    
+                    <li>
+                        <a href="">
+                            <img src="images/bg_culist1.png" alt="">
+                            <span>대전무형문화재
+                                <em>전수회관</em>
+                            </span>
+                        
+                        </a>
+                    </li>
+                    <li><a href=""><img src="images/bg_culist2.png" alt="">
+                            <span>대전전통나래관
+                                <em></em>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href=""><img src="images/bg_culist3.png" alt="">
+                            <span>대전웃다리농악
+                                <em>전수교육관</em>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href=""><img src="images/bg_culist4.png" alt="">
+                            <span>대전문학관
+                                <em></em>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href=""><img src="images/bg_culist5.png" alt="">
+                        <span>대전테미
+                            <em>예술창작센터</em>
+                        </span>
+                    </a>
+                </li>
+                    <li><a href=""><img src="images/bg_culist6.png" alt="">
+                            <span>대전예술가의 집
+                                <em></em>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+
+            
+            
+            
+    <script>
+        
+        var html = document.querySelector('html');
+        var culture_list = document.querySelector('.culture_list');
+        // var abroadPhotos = document.querySelector('.abroad_photos');
+        
+        console.log(html);
+
+        window.addEventListener('scroll', 액션);
+
+        function 액션() {
+            console.log(html.scrollTop);
+            
+            if (html.scrollTop > 550) {
+                culture_list.classList.add('act');
+            }
+            if (html.scrollTop < 400) {
+                culture_list.classList.remove('act');
+            }
+            
+        // $('#cont_wrap.main .culture_list').mouseleave(function(){
+		// 	if ($(this).hasClass('rdy')) {
+		// 		$('#cont_wrap.main .culture_list > li').removeClass('in out');
+		// 			};
+		// 		});
+
+        }
+        
+
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 3,
+            slidesPerGroup: 3,
+            autoplay: {
+                delay: 2000,
+            },
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+
+    </div>   <!-- cont_wrap 종료 -->
+  
+  
+    <!-- SCROLL 위치 반응 스크립트-->
+    
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var fixed = document.querySelector('#hd_wrap')
+        
+        window.addEventListener('scroll',event);
+        
+        function event() {
+            console.log(html.scrollTop);
+            
+            if (html.scrollTop > 160) {
+                fixed.classList.add('fixed');
+            } 
+            if (html.scrollTop === 0) {
+                fixed.classList.remove('fixed');
+            } 
+            
+        }
+        
+        
+    </script> 
+
+    
+
+  
+  
+    
+</body>
+	
+
+</html>
+
+
