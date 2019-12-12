@@ -119,7 +119,7 @@ a:hover {text-decoration:none}
 /* 전등 */
 .picture_wrap .light {
     position: absolute;
-    left:680px;
+    left:640px;
     top:470px;
     background-color:rgb(97, 36, 97);
     transform: rotate(-180deg); 
@@ -212,7 +212,7 @@ a:hover {text-decoration:none}
 
 .picture_wrap .picture1 {
     position: absolute;
-    left:400px;
+    left:460px;
     top:10px;
     background-image: url("../images/mona.jpeg");
     
@@ -235,7 +235,7 @@ a:hover {text-decoration:none}
 }
 .picture_wrap .picture4 {
     position: absolute;
-    left:400px;
+    left:460px;
     top:750px;
     background-image: url("../images/ITC.png");
 }
