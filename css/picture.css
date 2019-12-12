@@ -119,7 +119,7 @@ a:hover {text-decoration:none}
 /* 전등 */
 .picture_wrap .light {
     position: absolute;
-    left:540px;
+    left:580px;
     top:470px;
     background-color:rgb(97, 36, 97);
     transform: rotate(-180deg); 
