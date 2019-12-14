@@ -68,9 +68,9 @@ a:hover {text-decoration:none}
 }
 .header.on p {
     opacity: 0;
-    transition-delay: 7s;
-    transition-duration: 7s;
-    transform: rotateY(260deg); 
+    transition-delay: 10s;
+    transition-duration: 8s;
+    transform: rotateY(280deg); 
     padding-right:0px;
     
 }
@@ -83,9 +83,9 @@ a:hover {text-decoration:none}
     text-align: right;
     font-size:56px;
     text-shadow: 2px 2px 3px rgb(219, 243, 2);
-    transition-delay: 7s;
+    transition-delay: 10s;
     transition-duration: 7s;
-    opacity:0.9;
+    opacity:1;
   
  }
 
@@ -103,8 +103,9 @@ a:hover {text-decoration:none}
     position: absolute;
     right:0px;
     top:420px;
-    left:620px;
+    left:570px;
     transform: rotateY(360deg);
+   
     /* background-image: url("../images/mys.png"); */
 }
 
@@ -143,6 +144,11 @@ a:hover {text-decoration:none}
     width:240px;
     height:240px;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition-delay: 2s;
+    transition: 9s;
 }
 .picture_wrap .pic a {
     position: absolute;
@@ -160,14 +166,6 @@ a:hover {text-decoration:none}
     text-align:center;
 }
 
-.picture_wrap .pic {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transition-delay: .6s;
-    transition: 8s;
-}
-
 .picture_wrap .pic span {
     position: absolute;
     width:100%;
@@ -181,8 +179,8 @@ a:hover {text-decoration:none}
     padding-top:10px;
     color: greenyellow;
     opacity: 1;
-    transition-delay: 8s;
-    transition-duration: 3s;
+    transition-delay: 10s;
+    transition-duration: 4s;
 
 }
 
@@ -204,7 +202,7 @@ a:hover {text-decoration:none}
     border-bottom:500px solid rgba(216, 42, 71, 0.4);
     border-right: 50px solid transparent;
     border-left: 50px solid  transparent;
-    transform: rotate(-180deg); 
+    transform: rotate(-280deg); 
     transition: 1s;
     /* background-color:rgba(255, 50, 50, 0.1); */
 }
@@ -216,7 +214,7 @@ a:hover {text-decoration:none}
     left:520px;
     top:10px;
     background-image: url("../images/mona.jpeg");
-    
+    transition-delay: 1s;
 }
 
 
@@ -225,6 +223,7 @@ a:hover {text-decoration:none}
     left:0px;
     top:260px;
     background-image: url("../images/kakao.png");
+    transition-delay: 1s;
     
 }
 
@@ -233,23 +232,27 @@ a:hover {text-decoration:none}
     left:0px;
     top:560px;
     background-image: url("../images/culture.png");
+    transition-delay: 1s;
 }
 .picture_wrap .picture4 {
     position: absolute;
     left:520px;
     top:750px;
     background-image: url("../images/ITC.png");
+    transition-delay: 1s;
 }
 .picture_wrap .picture5 {
     position: absolute;
     left:1000px;
     top:550px;
     background-image: url("../images/Trumpia.png");
+    transition-delay: 1s;
 }
 .picture_wrap .picture6 {
     position: absolute;
     left:1000px;
     top:250px;
     background-image: url("../images/mys.png");
+    transition-delay: 1s;
 }
 
