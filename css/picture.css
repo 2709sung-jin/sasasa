@@ -237,7 +237,7 @@ a:hover {text-decoration:none}
 
 .picture_wrap .picture4 {
     position: absolute;
-    left:500px;
+    left:620px;
     top:750px;
     background-image: url("../images/ITC.png");
     transition-delay: 3s;
@@ -254,6 +254,13 @@ a:hover {text-decoration:none}
     left:1000px;
     top:250px;
     background-image: url("../images/mys.png");
+    transition-delay: 3s;
+}
+.picture_wrap .picture7 {
+    position: absolute;
+    left:320px;
+    top:750px;
+    background-image: url("../images/ITC.png");
     transition-delay: 3s;
 }
 
