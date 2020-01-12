@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Keywords" content="사이트키워드" />
+        <meta name="description" content="사이트설명" />
+        <meta name="Author" content="제작자정보" />
+        <meta name="Copyright" content="카피라이트" />
+    
+        <link rel="stylesheet" href="css/post_style.css">
+        <!-- Link JQUERY CDN JS -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <title>Document</title>
+    
+    
+    </head>
+    
+    <body>
+    
+        <header>
+            
+            <div class="container-outer">
+                <div class="logo">
+                    <a href="" class="logo_1">
+                        <img src="images/logo2.gif" alt="POST SEOUL">
+                    </a>
+                    
+                </div>
+            </div>
+    
+        </header>
+    
+            <div class="hambuger_wrap">
+                    <div class="container-outer"> 
+                <a href="" class="hambuger">
+    
+                    <span></span>
+                
+                    <span></span>
+                
+                    <span></span>
+            
+                </a>   
+    
+            </div>
+            </div>
+            </div> 
+    
+            <!-- </div> -->
+    
+        
+    
+            <div id="nav">
+                   
+                <div class="nav_inner">
+                   
+                    <ul class=" ">
+                        <li class=""><a href="" title="PEOPLE" class=""><span>생명다양성재단</span></a>
+                            <ul class="sub">
+                                <li class=""><a href="" title="APARTMENT" class=""><span>인사말</span></a></li>
+                                <li class=""><a href="" title="WORKPLACE" class=""><span>소개</span></a></li>
+                                <li class=""><a href="" title="MAKERS" class=""><span>프로그램</span></a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="" title="PLACES" class=""><span>생활식물생태학</span></a>
+                            <ul class="sub">
+                                <li class=""><a href="" title="SHOP" class=""><span>SHOP</span></a></li>
+                                <li class=""><a href="" title="CAFE" class=""><span>언론보도</span></a></li>
+                                <li class=""><a href="" title="FOOD" class=""><span>FOOD</span></a></li>
+                                <li class=""><a href="" title="HOTEL" class=""><span>HOTEL</span></a></li>
+                                <li class=""><a href="" title="CULTURE" class=""><span>CULTURE</span></a></li>
+                                <li class=""><a href="" title="AFTER DARK" class=""><span>AFTER DARK</span></a></li>
+                                <li class=""><a href="" title="ESCAPISM" class=""><span>ESCAPISM</span></a></li>
+                                <li class=""><a href="" title="GUIDE" class=""><span>GUIDE</span></a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="" title="PLUS" class=""><span>후원</span></a>
+                            <ul class="sub">
+                                <li class=""><a href="" title="BLOG" class=""><span>BLOG</span></a></li>
+                                <li class=""><a href="https://www.postseoulshop.com/" title="SHOP" class="" target="_blank"><span>SHOP</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- #nav -->
+            
+                
+        
+    
+    <script>
+    
+            // 햄버거 버튼 클릭 
+            
+            $(function() {
+            
+                $('.hambuger_wrap .hambuger').click(function(e) {
+    
+                    e.preventDefault();
+    
+                    console.log(e.target.tagName);
+    
+                    $('#nav').toggleClass('on')
+                        
+                    $('.hambuger_wrap .hambuger').toggleClass('on')
+    
+                    // $('.hambuger span').toggleClass('on')
+            
+            })
+            
+            })
+            
+    </script>
+    
+    
+    <main>
+    
+        <div class="wrap">
+        
+            <div class="container-outer">
+                
+                <div class="main-logo">
+                   
+                    <a href=""><img src="images/logo.gif" class="logo3" alt="POST SEOUL"></a>
+                    
+                </div>
+                
+                
+                <div class="items_outer">
+                    
+                    <div class="items">
+    
+                        
+                        <div class="item item-makers odd odd2">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/one.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">MAKERS</div>
+                                        <div class="title">이로</div>
+                                        <div class="subtitle">독립 서점 운영자</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="item item-places even odd2" style="margin-top: 42px;">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/two.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">SHOP</div>
+                                        <div class="title">메종 키티버니포니 서울</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="item item-makers odd even2">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/three.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">MAKERS</div>
+                                        <div class="title">권혁인 + 최장민</div>
+                                        <div class="subtitle">콘텐츠 디렉터</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="item item-places even even2" style="margin-top: 42px">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/four.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">AFTER DARK</div>
+                                        <div class="title">서브스탠스</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item item-makers odd odd2">                   <!-- 5번-->
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/five.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">MAKERS</div>
+                                        <div class="title">이정우</div>
+                                        <div class="subtitle">패션 디자이너</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="item item-places even odd2" style="margin-top: 42px;">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/six.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">HOTEL</div>
+                                        <div class="title">스몰 하우스 빅 도어</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="item item-makers odd even2">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/seven.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">WORKPLACE</div>
+                                        <div class="title">이광호</div>
+                                        <div class="subtitle">디자이너</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                        <div class="item item-places even even2" style="margin-top: 42px">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/eight.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">SHOP</div>
+                                        <div class="title">유즈드 퓨처</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item item-makers odd odd2">                   <!-- 9번-->
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/nine.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">APARTMENT</div>
+                                        <div class="title">김지연</div>
+                                        <div class="subtitle">디자이너</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="item item-places even odd2" style="margin-top: 42px;">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/ten.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">SHOP</div>
+                                        <div class="title">플랫아파트먼트</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="item item-makers odd even2">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/eleven.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">MAKERS </div>
+                                        <div class="title">조성룡</div>
+                                        <div class="subtitle">건축가</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                        <div class="item item-places even even2" style="margin-top: 42px">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/twelve.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">CULTURE</div>
+                                        <div class="title">디 뮤지엄</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="item item-makers odd odd2">                   <!-- 13번-->
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/thirty.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">APARTMENT</div>
+                                        <div class="title">김나영 </div>
+                                        <div class="subtitle">방송인 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="item item-places even odd2" style="margin-top: 42px;">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/fourty.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">SHOP</div>
+                                        <div class="title">페얼스</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="item item-makers odd even2">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/fifty.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">APARTMENT</div>
+                                        <div class="title">신해옥+신동혁</div>
+                                        <div class="subtitle">디자이너</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                        <div class="item item-places even even2" style="margin-top: 42px">
+                            
+                            <div class="item-outer">
+    
+                                <div class="item-inner" style="background-image: url('images/sixty.jpg'); background-size: contain; background-repeat: no-repeat; ">
+                                    <span></span>
+                                    <a href=""></a>
+                                    <div class="info">
+                                        <div class="category">CULTURE</div>
+                                        <div class="title">디 뮤지엄</div>
+                                        <div class="subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+                    </div>     
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    
+    
+    <div id="footer">
+        <div class="container-outer">
+            
+            <div class="sns">
+                <a href="https://www.instagram.com/post_seoul_magazine" target="_blank"><span class="fa fa-instagram"></span></a>
+                    <a href="https://www.facebook.com/postseoulkorea/" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.pinterest.com/postseoulkorea/" target="_blank"><span class="fa fa-pinterest"></span></a>
+                </div> <!-- .sns -->
+                        
+            <div class="copyright">© AZMEDIA</div>
+            
+            <div class="address">
+                <div class="dsave-single-view" data-extra="<p>1F,&amp;nbsp;59-6 Moraenae-ro 17-gil, Seodaemun-gu, Seoul 03708</p>
+    
+                    <p><a href=&quot;mailto:hello@newpress.kr&quot;>hello@newpress.kr</a></p>
+    
+                    <p><a href=&quot;http://www.newpress.kr&quot; target=&quot;_blank&quot;>www.newpress.kr</a></p>
+                    "><p>5F,&nbsp; 광흥창역 1번 출구, Seodaemun-gu, Seoul 03708</p>
+    
+                    <p><a href="mailto:hello@newpress.kr">AZ@newpress.kr</a></p>
+    
+                    <p><a href="http://www.AZMEDIA.CO.KR" target="_blank">WWW.AZMEDIA.CO.kr</a></p>
+                </div>			
+            </div> <!-- .address -->
+        </div> <!-- .container-outer -->
+    </div>
+    
+    <script type="text/javascript">
+       
+        var html = document.querySelector('html');
+        var logo = document.querySelector('header .logo')
+        var main_logo = document.querySelector('.wrap .main-logo .logo3')
+        var container_outer = document.querySelector('header .container-outer')
+           
+        
+        window.addEventListener('scroll',event);
+        
+        
+        
+        function event() {
+                     
+            console.log(html.scrollTop);
+            
+            if (html.scrollTop > 40) {
+                logo.classList.add('on');
+            } 
+            if (html.scrollTop === 0) {
+                logo.classList.remove('on');
+            }
+            if (html.scrollTop > 40) {
+                main_logo.classList.add('on');
+            } 
+            if (html.scrollTop === 0) {
+                main_logo.classList.remove('on');
+            }
+            if (html.scrollTop > 40) {
+                container_outer.classList.add('on');
+            } 
+            if (html.scrollTop === 0) {
+                container_outer.classList.remove('on');
+            }
+            
+    
+        }
+    
+    </script>
+    
+    </body>
+    </html>
