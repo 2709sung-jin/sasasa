@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>GHOST</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection">
+<meta name="Keywords" content="사이트키워드" />
+<meta name="description" content="사이트설명" />
+<meta name="Author" content="제작자정보" />
+<meta name="Copyright" content="카피라이트" />
+<meta name="reply-to" content="연락처(이메일)" />
+<link rel="stylesheet" type="text/css" href="css/ui.css" />
+
+<!--font_awesome-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+</head>
+
+<body>
+       
+    <div id="wrap">
+        
+        <header>
+    
+            <div class="menu_inner">
+                <a href="#" data-rol="#wrap_one"><img src="images/gnb1.png" class="gnb1"></a>
+                <a href="#" data-rol="#wrap_two"><img src="images/gnb2.png" class="gnb2"></a>
+                <a href="#" data-rol="#wrap_three"><img src="images/gnb3.png" class="gnb3"></a>
+                <a href="#" data-rol="#wrap_four"><img src="images/gnb4.png" class="gnb4"></a>
+            </div>
+               
+        </header>
+
+
+        <div class="aside_bar">
+            
+            <div class="aside_bar_bg">
+                <div class="rabbit">
+                    <a href=""><img src="images/boy1.png" class="rabbit_tr"></a>
+                </div>
+                <div class="sns">
+                    <a href=""><img src="images/btn_cafe.png" class="cafe"></a>
+                    <a href=""><img src="images/btn_face.png" class="face"></a>
+                </div>
+            </div>
+        
+        </div>
+       
+
+        <div id="wrap_one"> 
+            
+            <div class="inner">
+                
+                <div class="ghost">
+                    <img src="images/bg1_ele.png" class="ghost_a">
+                    <img src="images/bg1_ele1.png" class="ghost_b">
+                </div>
+                
+                <div class="img_info">
+                    <img src="images/main_copy.png">
+                </div>
+                                
+                <div class="pop_up">
+                    <a href="javascript:void(0)" title="열기" class="btn_open"></a>
+                    <iframe class="iframe" width="800" height="400" src="https://www.youtube.com/embed/KBizcnz3v18" 
+                    frameborder="0"></iframe> 
+                </div>
+                
+                <div id="popup_on" class="video">
+                    <a href="javascript:void(0)" title="닫기"><i class="fa fa-window-close fa-5x"></i></a>
+                    <div class="mv_area">
+						<div class="contains">
+							<div class="video_top">
+								<div class="video_box"><iframe class="iframe_one" width="800" height="400" src="https://www.youtube.com/embed/KBizcnz3v18"></iframe></div>
+							</div>
+						</div>
+					</div>
+				</div>
+            
+            </div>
+        </div>
+       
+    <script>
+    // ?autoplay=1&mute=1  $("#img_form_url").attr("src", imgurl);
+
+    //유튜브 팝업창
+    $(function(){
+        $('.btn_open').click(function(){
+            $('.iframe_one').attr("src","https://www.youtube.com/embed/KBizcnz3v18?autoplay=1&mute=1&color=red&modestbranding=1");
+            $('.video').css("display","block");
+        });
+    });
+
+    $(function(){
+        $('.fa.fa-window-close.fa-5x').click(function(){
+            $('.video').css("display","none");
+
+            $('.iframe_one').removeAttr('src');
+        });
+    });
+    
+    
+
+    </script>
+        
+        <div id="wrap_two"> 
+            
+            <div class="inner">
+                
+                
+                <div class="doll">
+                    <img src="images/bg2_ele1.png" class="doll_a">
+                    <img src="images/bg2_ele.png" class="doll_b">
+                    <img src="images/bg2_ele2.png" class="doll_c">
+                </div>
+
+                
+                <div class="img_info">
+                    <img src="images/regist_copy.png">
+                    <img src="images/angel.png">
+                </div>
+
+                <form>
+                    
+                    <div class="radio_btn">
+                        <input type="radio" name="google" value="google_play" /><img src="images/label1.png" />
+                        <input type="radio" name="app" value="app_store" /><img src="images/label2.png" />
+                    </div>
+
+                    <div class="tel_reserve">
+                        <span>
+                            <input type="tel" name="phone_number" value="" placeholder="">
+                            <a href=""></a>
+                        </span>
+                    </div>
+
+                    <div class="info_check">
+                        <img src="images/label3.png" />
+                        <a href=""><img src="images/btn_detail.png" /></a>
+                    </div>  
+                    
+                    <div class="google_reserve">
+                        <span>
+                            <a href=""></a>
+                        </span>
+                    </div>
+                   
+                
+                </form>
+            
+            </div>
+        </div>
+
+        <div id="wrap_three"> 
+
+            <div class="inner">
+
+                <div class="img_info">
+                    <img src="images/sns_copy.png">
+                    <img src="images/coffee.png">
+                </div>
+
+                <div class="reser_btn">
+                    <a href=""><img src="images/btn_sns.png"></a>
+                </div>
+                <div class="sns_txt">
+                    <img src="images/sns_txt.png">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="wrap_four"> 
+
+            <div class="inner">
+               
+                <div class="img_info">
+                    <img src="images/around_copy.png">
+                    <img src="images/map_bg.png" class="map_bg">
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+   
+
+</body>
+
+<script>
+
+// 스크롤 화면이동
+$("document").ready(function() {
+   
+    $('.menu_inner a').click(function(){
+        var move = $(this).attr('data-rol');
+        console.log($(move));
+        $('html, body').stop().animate({'scrollTop': $(move).offset().top});
+    });
+});
+
+
+
+</script>
+
+</html>    
