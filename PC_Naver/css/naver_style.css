@@ -1,0 +1,151 @@
+
+/* common */
+html,body       { overflow-x: hidden;  }
+body            { width:100%; height: auto; overflow-y: hidden;}
+#wrap           {  margin:0 auto;}
+.clear::after   { content: ''; display: block; clear: both;}
+.sec_bottom     { border-bottom: 5px solid rgb(203, 203, 207);}                       
+
+
+header                         { height:111px; width:100%; position: fixed; top:0; left:0; right:0; z-index: 120;}
+.header_top                    { position: relative; height:60px; background-color: #fff; }
+.header_top h1                 { width:56px;float: left; height:60px; line-height: 60px; box-sizing: border-box; }
+.header_top h1 a               { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191212.png); background-repeat: no-repeat; 
+                                text-indent: -9999px; display: inline-block; width:24px;height:22px; position: absolute; top: 19px; left: 15px; background-position: -32px -312px;background-size: 466px 440px; }
+
+.header_top p                  { width:52%; height: 60px; line-height: 60px; float: left; box-sizing: border-box; padding-left: 6px;}
+.header_top ul                 { position: absolute; top:0; right:0; width:123px; height: 60px; line-height: 60px;  box-sizing: border-box;}
+.header_top ul li              { float: left; width:30%; height: 60px; padding-right: 4px;  }
+.header_top ul li span         { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191212.png);background-size: 466px 440px; background-repeat: no-repeat; height: 60px; line-height: 60px;  
+                                 padding-bottom: 4px;  width: 28px; height: 28px; background-position: -321px -93px; vertical-align: middle; text-indent: -9999px; display: inline-block; } 
+
+.header_top ul li span.speak   { background-position: -321px -93px;}
+.header_top ul li span.picture { background-position: -321px -60px;} 
+.header_top ul li span.place   { background-position: -321px -27px;}  
+
+.header_nav                    { overflow: hidden; width:100%; line-height: 51px; box-sizing: border-box; background-color: #0eca68; position: relative; font-size:15px;}
+.header_nav .inner              {padding-right: 52px; padding-left: 20px;}
+.header_nav nav                { box-sizing: border-box;}
+.header_nav nav .nav_add       { position: absolute; top:0; right:0; z-index: 100; width:52px; height:50px; background-color: #0eca68;  }
+.header_nav nav .nav_add a     { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191212.png);background-size: 466px 440px; background-repeat: no-repeat;  
+                                    width: 14px; height: 16px; margin-left:18px; padding-bottom:4px;  line-height: 16px; background-position: -417px -377px; vertical-align: middle; text-indent: -9999px; display: inline-block;}
+  
+     
+main                                   { margin-top: 62px; box-sizing: border-box; }
+main article                           { position: relative;     }
+main article .news_head                { height:90px; line-height: 50px;   }
+main article .news_head_sub            { height:50px;  }
+main article .news_head_sub h2         { color: #000; letter-spacing: -1px; font-size:18px; font-weight: 500; float: left; padding-left: 14px;}
+main article .news_head_sub a          { position: absolute; right:16px; top:0; font-size:14px; color: #000; }
+main article .news_head_sub a i        { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_cui_v191205.png); background-size: 628px 609px; background-repeat: no-repeat;  
+                                         width: 18px; height: 18px; margin-left:2px; padding-bottom:4px;  line-height: 16px; background-position: -571px -346px; vertical-align: middle; display: inline-block;} 
+
+main article .news_head_bre            { position: relative; min-width:400px; height:36px; line-height: 36px; position: relative; box-sizing: border-box;}
+main article .news_head_bre p          { padding-left: 50px;   }
+main article .news_head_bre span.break { position: absolute; font-size:13px; padding-left: 14px; }
+main article .news_head_bre span.name  { position: absolute; top:0px; right:20px; font-size:13px; }
+
+
+main .section01                               { padding:8px 12px; height: auto;}
+main .section01 ul                            { height: auto;  }
+main .section01 ul li                         { height:152px; box-sizing: border-box; border-bottom: 1px solid rgb(182, 182, 182);}
+main .section01 ul li .press_tit              { position: relative; height:42px; min-width: 180px;}
+main .section01 ul li .press_tit span img     { height:32px;}
+main .section01 ul li .press_tit span.date    { font-size: 12px; text-overflow:ellipsis;overflow: hidden;  }
+main .section01 ul li .press_tit .press_sub   { width:48px; padding:2px 6px; font-size: 14px; position: absolute;  top:0px; right: 6px; border:1px solid rgb(59, 194, 32); background-color: #fff;}
+main .section01 ul li .press_tit .press_sub a { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_cui_v191205.png); background-size: 628px 609px; background-repeat: no-repeat;  
+                                                padding: 2px 4px; width: 9px; height: 9px; line-height: 9px;   background-position: -508px -283px; vertical-align: middle; text-indent: -9999px; display: inline-block;   }
+
+main .section01 ul li .press_bottom                         { width:100%; height: 100px;  padding-bottom: 8px; box-sizing: border-box;}
+main .section01 ul li .press_bottom .press_picture          { float: left;  width: 146px;  max-width:146px; }
+main .section01 ul li .press_bottom .press_picture .pic     { position: relative; width:100%; text-align:center; margin:0px auto; }
+main .section01 ul li .press_bottom .press_picture .pic img { position: absolute; left:0; top:0; right:0; bottom:0;  width: 100%; }
+
+main .section01 ul li .press_bottom .press_text             { width:100%;  height: 82px; padding-top: 8px; padding-left: 152px; float: left;   letter-spacing: -1px;  margin-left: 4px; text-overflow:ellipsis; overflow: hidden;}
+main .section01 ul li .press_bottom .press_text .top        { width:100%; height: 38px; line-height: 18px;  color:#000; text-overflow:ellipsis; overflow: hidden; }
+main .section01 ul li .press_bottom .press_text .bottom     { width:100%; height: 38px; line-height: 18px;  font-size:12px; color:rgb(119, 117, 117); text-overflow:ellipsis; overflow: hidden; }
+
+main .section01 ul li.two                                   { margin-top:10px; }
+
+main .section01 ul li.three                                 { margin-top:10px;}
+
+main .section01 .plus_view                                  { position: relative; height: 50px;}
+main .section01 .plus_view .location                        { position: absolute; top:16px; width:100%; text-align: center; margin:0 auto;}
+main .section01 .plus_view .location .ima                   { background-image: url(https://s.pstatic.net/static/www/m/uit/2020/sp_cui.png); background-size: 628px 609px; background-repeat: no-repeat;  
+                                                              width: 15px;  height: 15px; background-position: -400px -560px; display: inline-block;}
+main .section01 .plus_view span                             { color: #222; font-weight: 500;}
+
+
+main .section02                                             { width:100%;}
+main .section02 .section02_top                              { margin-top: 4px; padding: 10px 10px; }
+main .section02 .section02_top  h3                          { max-width:62%; float: left; letter-spacing: -2px; color: #222; font-weight: 550; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+main .section02 .section02_top .top_in                      { height: 50px;}
+main .section02 .section02_top .top_in a                    { min-width:20%; float: right; padding-right:4px;}
+main .section02 .section02_top .top_in a::before            { content: '';  display: inline-block;  width: 12px; height: 8px; background-position: -616px -586px; vertical-align: 1px;  margin-right: 3px;
+                                                              background-image: url(https://s.pstatic.net/static/www/m/uit/2020/sp_cui.png);    background-size: 628px 609px;   background-repeat: no-repeat;}
+
+main .section02 .section02_top h4                           { margin-bottom: 8px; margin-top: 2px;}
+main .section02 .section02_top ul                           { overflow: hidden;}
+main .section02 .section02_top ul li                        { box-sizing: border-box; width:25%; float: left; margin-bottom: 10px; }
+main .section02 .section02_top ul li a                      { position: relative;  display: block;  margin: 0 6px 0 5px; padding-top: 12px; height: 87px; box-sizing: border-box; background: #f2f4f9;
+                                                              border: solid 1px #edeff4; border-radius: 3px; background-repeat: no-repeat; text-align: center;}
+main .section02 .section02_top ul li a::after               { position: absolute;  top: 5px; right: 2px;  content: "";  display: block;  width: 13px;  height: 13px;  
+                                                                 background-image: url(https://s.pstatic.net/static/www/m/uit/2020/sp_cui.png); background-size: 628px 609px; background-position: -75px -580px;}
+main .section02 .section02_top ul li a img                  { width: 42px; height: 42px; border-radius: inherit;}
+main .section02 .section02_top ul li a p                    { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  margin-top: 4px; text-align: center; font-weight: 500; font-size: 13px;
+                                                                 line-height: 16px; letter-spacing: -.8px; color: #444;}
+
+main .section02 .section02_bottom                     { margin-top: 4px; padding: 10px 10px; }
+main .section02 .section02_bottom .top_title          { height: 50px;}
+main .section02 .section02_bottom .top_title a        { min-width:12%; float: right; padding-right:4px; padding-top: 2px; font-size: 14px;}
+main .section02 .section02_bottom h4                  { max-width:70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; float: left; margin-bottom: 8px; margin-top: 2px; font-size: 16px; font-weight: 700;  color: #444; margin-left: 10px;}
+main .section02 .section02_bottom ul li               { width:50%; height:48px; box-sizing: border-box;  float: left; margin-bottom: 10px; }
+main .section02 .section02_bottom ul li a             { position: relative;  display: block;  margin: 0 6px 0 5px;  box-sizing: border-box; background: #f2f4f9;
+                                                        border: solid 1px #edeff4; border-radius: 3px; background-repeat: no-repeat; text-align: left; padding-left: 8px;}
+main .section02 .section02_bottom ul li a img         { width: 42px; height: 42px; border-radius: inherit;}
+main .section02 .section02_bottom ul li a span        { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  margin-top: 4px; text-align: center; font-weight: 500; font-size: 14px;
+                                                        line-height: 16px; letter-spacing: -.8px; color: #444; display: inline-block; padding-top: 8px;}
+main .section02 .section02_bottom ul li a span::after { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191224.png); background-size: 443px 413px; background-repeat: no-repeat; content: ""; display: block;
+                                                        position: absolute; top: 30%; right: 12px; width: 8px; height: 12px; background-position: -433px -103px; }
+
+
+
+footer                                                   { position: relative; background-color: #eff2f8; padding-bottom: 80px;}
+footer .control                                          { padding:8px 14px; box-sizing:border-box; border-bottom: 1px solid #dadee5; padding-bottom: 8px; overflow: hidden;}
+footer .font_s, footer .font_b, .font_s_end, .font_b_end { position: absolute; left: 50%; bottom: 168px;  width: 182px;  height: 33px;  margin-left: -92px;  border: 1px solid #14171a; background-color: rgba(16,18,21,.85); font-size: 15px;
+                                                           font-weight: 700;   line-height: 33px;  color: #fff;  letter-spacing: -1px;  text-align: center;  text-shadow: 0 -1px 1px rgba(0,0,0,.75); z-index: 10;}
+
+footer .control ul li button               { width:40px; height:35px; background-color: #f8fafb;line-height: 33px; letter-spacing: -1px; color: #555; 
+                                             border: 1px solid #dadee5; text-align: center;  vertical-align: top;}         
+footer ul.font                             { float: left;}
+footer ul.font li                          { float: left;width:40px;  }
+footer ul.share                            { float:right;   }
+footer ul.share li                         { box-sizing: border-box; float: left; width:38px; border: 1px solid #dadee5; background-color: #f8fafb; }
+footer ul.share li:first-child             { margin-right: 4px;}
+footer ul.share li a                       { background-image: url(https://s.pstatic.net/static/www/m/uit/2019/sp_main_v191231a.png);  background-size: 668px 645px; background-repeat: no-repeat; width: 18px; height: 16px;  background-position: -97px -573px;
+                                             display: block;  overflow: hidden;  margin: 8px 9px 9px;   color: transparent;}
+footer ul.share li #top_button             { background-position: -628px -21px}
+
+
+footer .foot_bottom                        { height: 114px; padding-top:16px;}
+footer .foot_bottom .log_service           { margin: 0 auto; text-align: center; padding-bottom: 4px;}
+footer .foot_bottom ul.foot_nav            { width:236px; display: inline-block;text-align: center; }
+footer .foot_bottom ul.foot_nav li         { float: left; border-right:1px solid #dadee5;}
+footer .foot_bottom ul.foot_nav li a       { padding:0 10px; font-size: 14px; color: #5d667a;}
+
+footer .foot_bottom .terms                 { height: 24px; margin: 0 auto; text-align: center; }
+footer .foot_bottom .terms p               { width:100%; font-size: 14px; display: inline-block; margin: 0 auto; text-align: center;}    
+footer .foot_bottom ul.foot_info           { display: inline-block;text-align: center; }
+footer .foot_bottom ul.foot_info li        { float: left; border-right:1px solid #dadee5; }
+footer .foot_bottom ul.foot_info li a      { padding:0 10px; font-size: 14px; color: #5d667a;}
+
+
+
+
+@media (max-width: 320px) {
+.header_top p                                  { text-indent: -9999px; width:20%;}
+main .section02 .section02_top ul li a img     { width: 35px; height: 35px; }
+main .section02 .section02_top  h3             { max-width: 50%; }
+main .section02 .section02_bottom h4           { max-width: 50%; }
+main .section02 .section02_bottom ul li        { width:100%; min-width: 160px;}
+}
