@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>네이버</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/naver_style.css">
+    <link rel="stylesheet" href="css/swiper.css"> -->
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+
+<style>
+
+    /* common */
+    .clear::after       { content: ''; display: block; clear: both;}
+    #wrap               { width:100%; margin:0 auto;}
+    #wrap .wrap_inner   { margin:0 auto; }
+
+
+    /* header */
+    header                                  { min-width: 1100px; margin:0 auto; height:177px; box-sizing: border-box;}
+    header::after                           { content: ''; display: block; clear: both;}   
+    header .header_top                      { width: 1080px; height:130px; margin:0 auto; padding: 40px 0; box-sizing: border-box; position: relative;}
+    header .header_top .hdt_left            { width:750px; height:52px;}   
+    header .header_top .hdt_left h1         { float: left; margin-right: 24px; }
+    header .header_top .hdt_left h1 a       { width:195px; height: 48px; background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) no-repeat; background-position: -5px -4px; display: block; text-indent: -99999px;}
+
+    header .header_top .hdt_left .fom                           { width:474px; height:49px; float: left;}
+    header .header_top .hdt_left .fom .text_box                 { margin-top:5px; float: left; width: 470px; height: 45px; border: 2px solid #03cf5d;  background-color: #fff;}
+    header .header_top .hdt_left .fom .text_box .text_in        { border:none; width:390px; height:44px; padding-left: 10px;}
+    header .header_top .hdt_left .fom .text_box a               { float: right; width:56px; height:42px; display: inline-block; padding-top: 16px; padding-left: 4px; box-sizing: border-box; }
+    header .header_top .hdt_left .fom .text_box a .keybo        { display: inline-block; width:20px;height:13px; 
+                                                                  background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) no-repeat; background-position: -33px -60px; }
+    header .header_top .hdt_left .fom .text_box a .allow        { display: inline-block; width:20px;height:12px;  
+                                                                  background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) no-repeat; background-position: -82px -57px; }
+    header .header_top .hdt_left button                         { width:47px; height: 49px; margin-top: 5px; background: #03cf5d;   }
+    header .header_top .hdt_left button .search_but             { display: inline-block; width:23px;height:26px; background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg) no-repeat; background-position: -4px -55px;} 
+
+    header .header_top .start_add                               { width:240px; height:24px; position: absolute; right:0; top:10px;}
+    header .header_top .start_add .start                        { float:left; display: block; height: 21px; color: #888; letter-spacing: -1px; font-size: 11px; line-height: 22px;}
+    header .header_top .start_add .start_span                   { float:left; display: block; height: 21px; color: #888; letter-spacing: -1px; font-size: 11px; line-height: 22px;}
+    header .header_top .start_add .ico_span                     { float:left; display: block;  margin-left: 5px;  width: 6px;  height: 16px; background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png) no-repeat; background-position: -215px -90px; }
+    header .header_top .start_add .junior                       { text-indent: -99999px; padding-left: 8px; display: block; float: left; width: 72px;  height: 16px; line-height: 22px; background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png) no-repeat; background-position: 18px -153px; font-size: 11px;}
+    header .header_top .start_add .happy                        { line-height: 22px; text-indent: -99999px; float:left; display: block;  margin-left: 5px;  width: 34px;  height: 16px; background: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191212.png) no-repeat; background-position: -136px -153px; }
+    
+
+    /* header nav */
+    header nav                                           { height: 47px; margin:0 auto;  border-top: 1px solid #f1f3f6; box-sizing: border-box;}
+    header nav .nav_inner                                { width:1080px; margin: 0 auto;   }
+    header nav .nav_inner .left_meu                      { width:303px; height: 45px; padding-left: 4px; float: left; box-sizing: border-box;}
+    header nav .nav_inner .left_meu ul li                { float: left; margin-right: 14px; padding-top:4px; height: 45px; line-height: 45px; box-sizing: border-box;}
+    header nav .nav_inner .left_meu ul li:last-child     { margin-right: 0;}
+    header nav .nav_inner .left_meu ul li a              { margin-top: -1px; display: inline-block; }
+    header nav .nav_inner .left_meu ul li a.mail         { width: 25px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -294px -156px; }
+    header nav .nav_inner .left_meu ul li a.cafe         { width: 27px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -234px -234px; }
+    header nav .nav_inner .left_meu ul li a.blog         { width: 40px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -50px -182px;  }
+    header nav .nav_inner .left_meu ul li a.in           { width: 40px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -128px -130px;  }
+    header nav .nav_inner .left_meu ul li a.shop         { width: 26px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -111px -260px; }
+    header nav .nav_inner .left_meu ul li a.pay          { width: 25px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -294px -208px; }
+    header nav .nav_inner .left_meu ul li a.ntv          { width: 32px;  height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -200px -182px; margin-top: -1px; }
+
+    header nav .nav_inner .center_meu                    { width: 366px; height: 45px; float: left; padding-left: 14px;}
+    header nav .nav_inner .center_meu ul li              { float: left; margin-right: 14px; padding-top:4px; height: 45px; line-height: 45px; box-sizing: border-box;}
+    header nav .nav_inner .center_meu ul li:last-child   { margin-right: 0;}
+    header nav .nav_inner .center_meu ul li a            { margin-top: -1px; display: inline-block; }
+    header nav .nav_inner .center_meu ul li a.sa         { width: 26px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -294px -26px;}
+    header nav .nav_inner .center_meu ul li a.news       { width: 28px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -85px -234px;}
+    header nav .nav_inner .center_meu ul li a.stock      { width: 26px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -255px -260px;}
+    header nav .nav_inner .center_meu ul li a.estate     { width: 40px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -125px -156px;}
+    header nav .nav_inner .center_meu ul li a.map        { width: 27px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -123px -234px;}
+    header nav .nav_inner .center_meu ul li a.movie      { width: 26px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -37px -260px;}
+    header nav .nav_inner .center_meu ul li a.music      { width: 26px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -219px -260px;}
+    header nav .nav_inner .center_meu ul li a.book       { width: 13px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -294px -260px;}
+    header nav .nav_inner .center_meu ul li a.toon       { width: 26px; height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: -74px -260px;}
+
+    
+    header nav .nav_inner .add_meu                       { float:left; width:70px; height:44px;}
+    header nav .nav_inner .add_meu button                { background-color:#fff;outline: 0;}
+    header nav .nav_inner .add_meu button .add_bu        { color: #fff; margin-top: 15px; margin-left: 18px; display: inline-block; width: 62px;height: 16px; background: url('https://s.pstatic.net/static/www/img/uit/2020/sp_nav_v200110.png') no-repeat; background-position: 0 -130px;}
+
+
+
+
+
+
+    /* main */
+    .container                                          {  overflow: hidden;  min-width: 1100px;  background: #f2f4f7;}
+    main                                                {  box-sizing: border-box;}
+    main .ad_img                                        {  width:742px; height: 120px; }
+    main .ad_img a                                      {  display: inline-block;}
+    
+    main .section_top                                   { padding-top: 10px; margin:0 auto; width:1080px; height: 428px;} 
+    main .left_box                                      { float: left; width:740px; height:428px; }
+    main .right_box                                     { float: right; width:332px; height:424px; border:1px solid red;} 
+
+    main article .news_wrap                                     { padding-top:6px; width:740px; height: 298px; box-sizing: border-box; }
+    main article .news_wrap .news_top                           { padding-top:16px; padding-left: 14px; background: #fff; border: 1px solid #dee3eb;  margin-bottom: 8px; position: relative;  width:740px; height: 46px;   box-sizing: border-box; }
+    main article .news_wrap .news_top .press                    { height: 20px;}
+    main article .news_wrap .news_top .press .name              { color: #000;  text-decoration: none;  letter-spacing: -1px; font-weight: 600;  font-size: 13px; line-height: 16px;}
+    main article .news_wrap .news_top .press .allow             { display: inline-block;  margin-left: 3px;  width: 5px;  height: 16px; 
+                                                                  background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -256px -98px; vertical-align: middle;}
+    main article .news_wrap .news_top .press .title             { display: inline-block; padding-left: 10px;}
+    main article .news_wrap .news_top .menu_se                  { width:202px; height: 15px; position: absolute; right:0; top:14px; font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;}
+    main article .news_wrap .news_top .menu_se ul li            { float: left; margin-right: 14px; line-height: 18px;}
+    main article .news_wrap .news_top .menu_se ul li a          { display: inline-block; text-decoration: none; font-weight: 700; letter-spacing: -2px; font-size: 13px;}
+    main article .news_wrap .news_top .menu_se ul li a.fir      { color: #00ab33;}  
+
+    main article .news_wrap .news_main                              { border: 1px solid #ebeef3; background: #fff; width:740px; height: 243px;}
+    main article .news_wrap .news_main .news_title                  { border-bottom: 1px solid #ebeef3; position: relative; font-weight: 700;font-size: 13px; padding:12px; box-sizing: border-box; width:738px; height: 45px;}
+    main article .news_wrap .news_main .news_title a                { color: #000;}
+    main article .news_wrap .news_main .news_title .allow           { display: inline-block;  margin-left: 3px; margin-right: 12px; width: 5px;  height: 16px; 
+                                                                      background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -256px -98px; vertical-align: middle;}
+    main article .news_wrap .news_main .news_title .all_press       { margin-right: 24px;}
+    main article .news_wrap .news_main .news_title .my              { color: #666;}
+    main article .news_wrap .news_main .news_title .news_stand      { letter-spacing: -1px;}
+    main article .news_wrap .news_main .title_left                  { float: left; width:240px; height: 22px; }
+    main article .news_wrap .news_main .press_set                   { padding-top: 2px; position: absolute; right:92px; top:0; width:124px; height: 42px; }
+    main article .news_wrap .news_main .press_set a                 { display: inline-block; width:32px; height: 42px; }
+    main article .news_wrap .news_main .press_set a span.stand_a    { display: block; width: 24px; height: 28px; background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -226px -113px;}
+    main article .news_wrap .news_main .press_set a span.ic_a       { display: block; width: 24px; height: 28px; background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: 6px -183px}
+    main article .news_wrap .news_main .press_set a span.sett_a     { display: block; width: 28px; height: 28px; background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -17px -183px;}
+
+    main article .news_wrap .news_main .btn_box                     { border: 1px solid #ebeef3; position: absolute; width:88px; height: 42px; right:-3px; top:0; }
+    main article .news_wrap .news_main .btn_box .prev               { background: #fff; float: left; width:44px; height: 42px;outline: 0; }
+    main article .news_wrap .news_main .btn_box .next               { background: #fff; width:44px; height: 42px; outline: 0; border-left: 1px solid #ebeef3;}
+    main article .news_wrap .news_main .btn_box .prev span.pr       { margin-top: 10px; margin-left: 14px; display: block; width: 18px; height: 28px; background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -254px -24px;}
+    main article .news_wrap .news_main .btn_box .next span.ne       { margin-left: 16px; margin-top: 10px;display: block; width: 18px; height: 28px; background: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png) no-repeat; background-position: -102px -193px}
+
+    main article .news_wrap .news_main .news_content                     { width:738px; height: 201px; box-sizing: border-box;}
+    main article .news_wrap .news_main .news_content ul                  { }
+    main article .news_wrap .news_main .news_content ul li               { text-align: center; padding-top: 21px; float: left; width:123px; height: 67px;   border-right: 1px solid #f1f3f6; border-bottom: 1px solid #f1f3f6; box-sizing: border-box;}
+    main article .news_wrap .news_main .news_content ul li:nth-child(6n) { border-right: none;}
+
+
+    main .section_bottom                                            { width:1080px; height: 892px; border: 1px solid blue;}
+
+</style>
+
+
+</head>
+
+
+<body>
+    <div id="wrap">
+        <div class="wrap_inner">
+
+            <header>
+                <div class="header_top clear">
+                    <div class="hdt_left">
+                        <h1 class="logo">
+                            <a href="https://www.naver.com">
+                                NAVER
+                            </a>
+                        </h1>
+                        <form id="input_b" class="fom">
+                            <div class="text_box">
+                                <input type="text" class="text_in">
+                                <a href="javascript:" class="keyboard">
+                                    <span class="keybo"></span>
+                                    <span class="allow"></span>
+                                </a>
+                            </div>
+                        </form>
+
+                        <button id="search">
+                            <span class="search_but">
+
+                            </span>
+                        </button>
+                    </div>
+                    <div class="start_add">
+                        <a href="javascript:" class="start">
+                            <span class="start_span">네이버를 시작페이지로</span>
+                            <span class="ico_span"></span>
+                        </a>
+                        <a href="javascript:" class="junior">
+                            <span class="junior_span">쥬니어네이버</span>
+                        </a>
+                        <a href="javascript:" class="happy">
+                            <span class="happy_span">해피빈</span>
+                        </a>
+                    </div>
+                </div>
+
+                <nav>
+                    <div class="nav_inner">
+                    
+                        <div class="left_meu">
+
+                           <ul>
+                               <li><a href="javascript:" class="mail"></a></li>
+                               <li><a href="javascript:" class="cafe"></a></li>
+                               <li><a href="javascript:" class="blog"></a></li>
+                               <li><a href="javascript:" class="in"></a></li>
+                               <li><a href="javascript:" class="shop"></a></li>
+                               <li><a href="javascript:" class="pay"></a></li>
+                               <li><a href="javascript:" class="ntv"></a></li>
+                           </ul>
+
+                        </div>
+                        <div class="center_meu">
+                            <ul>
+                                <li><a href="javascript:" class="sa"></a></li>
+                                <li><a href="javascript:" class="news"></a></li>
+                                <li><a href="javascript:" class="stock"></a></li>
+                                <li><a href="javascript:" class="estate"></a></li>
+                                <li><a href="javascript:" class="map"></a></li>
+                                <li><a href="javascript:" class="movie"></a></li>
+                                <li><a href="javascript:" class="music"></a></li>
+                                <li><a href="javascript:" class="book"></a></li>
+                                <li><a href="javascript:" class="toon"></a></li>
+                            </ul>
+                        </div>
+                        <div class="add_meu">
+                           <button><span class="add_bu"></span></button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        
+
+            <div class="container">
+
+                <main>
+
+                    <section class="section_top clear">
+
+                        <div class="left_box">
+                            <div class="ad_img">
+                                <a href="https://lineage2m.plaync.com/event/p2020/200109_teaser/index/?L2M=03020105">
+                                    <img src="https://ssl.pstatic.net/tveta/libs/1262/1262456/29fe5f48162dc9a0950c_20200108151136979.jpg" alt="퓨어썸 샤워기">
+                                </a>
+                            </div>
+
+                            <article>
+
+                                <div class="news_wrap">
+                                    <div class="news_top">
+                                        <div class="news_top_inner">
+                                            <div class="press">
+                                                <span class="name">연합뉴스</span>
+                                                <span class="allow"></span>
+                                                <span class="title">정세균 총리 첫 입성 "文정부 성공에 일조…최선 다해 노력"</span>
+                                            </div>
+                                            <div class="menu_se">
+                                                <ul>
+                                                    <li><a href="http://news.naver.com/" class="fir">네이버뉴스</a></li>
+                                                    <li><a href="javascript:">연예</a></li>
+                                                    <li><a href="javascript:">스포츠</a></li>
+                                                    <li><a href="javascript:">경제</a></li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="news_main">
+                                        <div class="news_title">
+
+                                            <div class="title_left">
+                                                <a href="" class="news_stand">뉴스스탠드
+                                                    <span class="allow"></span>
+                                                </a>
+                                                <a href="" class="all_press">전체언론사</a>
+                                                <a href="" class="my">MY뉴스</a>
+                                            </div>
+
+                                            <div class="press_set">
+                                                <a href="" class="stand"><span class="stand_a"></span></a>
+                                                <a href="" class="ic"><span class="ic_a"></span></a>
+                                                <a href="" class="sett"><span  class="sett_a"></span></a>
+    
+    
+                                            </div>
+                                            <div class="btn_box">
+                                                <button class="prev"><span class="pr"></span></button>
+                                                <button class="next"><span class="ne"></span></button>
+    
+                                            </div>
+                                        </div>
+                                        <div class="news_content">
+                                            <ul>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd154219877.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd14449981.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd17324940.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd144152433.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd164352456.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/1122/nsd113655834.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd145150694.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2019/0313/nsd71954506.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd153955864.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd145249746.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd145813557.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd16432873.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd145032565.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd143938201.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2018/0201/nsd19842442.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd173348251.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2017/0424/nsd183553864.png"></a></li>
+                                                <li><a href="javascript:"><img src="https://s.pstatic.net/static/newsstand/up/2019/0314/nsd11030667.png"></a></li>
+                                            </ul>
+                                            
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <aside>
+
+                            <div class="right_box">
+
+                            </div>
+
+                        </aside>
+
+                    </section>
+
+                    <section class="section_bottom">
+
+                    </section>
+
+                </main>
+            </div>
+        
+        </div>
+    </div>  <!-- wrap -->
+
+
+</body>
+</html>
